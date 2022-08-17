@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+	<title>Decodificador de Texto - DecoText</title>
+    <link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style_ch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	<header>
+		<div>
+            <h2 class="titulo1">DecoText - Codifique e descodifique a sua mensagem</h2><br>
+        </div>
+	</header>
+
+	<main>
+        <div id="texto" class="texto">
+            <h3 id="titulo2">Digite a mensagem:</h3>
+            <textarea rows=5 cols=70 id="mensagem" class="mensagem" placeholder="Digite aqui sua mensagem."></textarea><br><br>
+            <button id="criptografar" class="criptografar" onclick="codificar()">Criptografar</button>
+            <button id="descriptografar" class="descriptografar" onclick="decodificar()">Descriptografar</button>
+        </div>
+        <div id="bloco_resultado">
+        <div class="resultado">
+            <h3 id="titulo3">Mensagem criptografada/descriptografada:</h3>
+            <textarea rows=5 cols=70 id="final" class="final" readonly placeholder="Sua mensagem criptografada/descriptografada aparecerá aqui."></textarea><br>
+        </div>
+            <button id="copiar" class="copiar" onclick="copiar()">Copiar</button>
+            <button id="limpar" class="limpar" onclick="limpar()">Limpar</button>
+        </div>
+
+	</main>
+
+    <footer>
+		<p class="rodape"> &copy; Caroline Guerra - 2022 | <a href="https://www.linkedin.com/in/acarolineguerra/" target="_blank">LinkedIn</a></p>
+	</footer>
+</body>
+
+    <script src="codif_decodif.js"></script>
+
+</html>
